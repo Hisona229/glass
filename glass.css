@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(/img/back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.glass {
+  width: 800px;
+  height: 500px;
+  border-radius: 30px;
+  background: linear-gradient(
+    100deg,
+    rgba(21, 21, 104, 0.2),
+    rgba(21, 21, 104, 0.2)
+  );
+  box-shadow: 0 10px 26px 0 rgba(0, 0, 0, 0.957);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  position: relative;
+  transition: backdrop-filter 0.5s ease;
+}
+.glass:hover {
+  backdrop-filter: blur(30px);
+}
+.glass .title {
+  text-align: center;
+  font-family: "Alkatra", cursive;
+  position: relative;
+}
+
+.glass .text {
+  text-align: left;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 40px;
+  font-family: "Alkatra", cursive;
+  font-size: 19px;
+}
+
+.glass .cat {
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+  margin-left: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 26px 0 rgba(0, 0, 0, 0.5);
+}
+
+.link {
+  text-align: left;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 40px;
+  font-family: "Alkatra", cursive;
+  font-size: 18px;
+  display: inline;
+}
+.icon {
+  width: 20px;
+  margin-left: 20px;
+  vertical-align: middle;
+  transition: width 0.5s ease;
+}
+.icon:hover {
+  width: 30px;
+}
+
+.number,
+.number1 {
+  text-align: right;
+  display: inline;
+  float: right;
+  font-family: "Alkatra", cursive;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.number {
+  color: rgba(32, 32, 127, 0.744);
+  transition: font-size 0.5s ease;
+}
+.number:hover {
+  text-decoration: none;
+  font-size: 19px;
+}
